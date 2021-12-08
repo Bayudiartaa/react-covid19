@@ -26,9 +26,9 @@ const Home = () => {
 
     function Positif() {
         axios.get('https://api.kawalcorona.com/positif',{
-            headers: {'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*' 
-            }  
+            headers: {'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Access-Control-Allow-Origin': '*',
+            }   
         })
         .then(function (response) {
             setPositif(response.data);
@@ -39,9 +39,9 @@ const Home = () => {
 
     function Sembuh() {
         axios.get('https://api.kawalcorona.com/sembuh',{
-            headers: {'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*' 
-            }  
+            headers: {'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Access-Control-Allow-Origin': '*',
+            }   
         })
         .then(function (response) {
             setSembuh(response.data);
@@ -52,9 +52,9 @@ const Home = () => {
 
     function Meninggal() {
         axios.get('https://api.kawalcorona.com/meninggal',{
-            headers: {'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*' 
-            }  
+            headers: {'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Access-Control-Allow-Origin': '*',
+            }   
         })
         .then(function (response) {
             setMeninggal(response.data);
@@ -65,9 +65,9 @@ const Home = () => {
 
     function Global() {
         axios.get('https://api.kawalcorona.com/',{
-            headers: {'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*' 
-            }  
+            headers: {'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Access-Control-Allow-Origin': '*',
+            }   
         })
         .then(function (response) {
             setGlobal(response.data);
