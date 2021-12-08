@@ -17,11 +17,7 @@ const Indonesia = () => {
     }, [])
 
     function getIndonesia() {
-        axios.get("https://api.kawalcorona.com/indonesia",{
-            headers: {'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
-            'Access-Control-Allow-Origin': '*',
-            }   
-        })
+        axios.get("https://api.kawalcorona.com/indonesia/")
         .then(function (response) {
         // console.log(response);
         setIndonesia(response.data);
@@ -32,11 +28,7 @@ const Indonesia = () => {
     }
 
     function getProvinsi() {
-        axios.get("https://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi",{
-            headers: {'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
-            'Access-Control-Allow-Origin': '*',
-            }   
-        })
+        axios.get("https://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi/")
         .then(function (response) {
         // console.log(response);
         setProvinsi(response.data);
