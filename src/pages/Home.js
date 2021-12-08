@@ -65,6 +65,7 @@ const Home = () => {
 
     return (
         <Container>
+            <meta id="meta-description" name="description" content="Some description." />
             <Row className="my-4" >
                 <Col className="my-2" md={4}>
                 {positif && (
