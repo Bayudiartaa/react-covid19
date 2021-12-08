@@ -6,7 +6,10 @@ import Indonesia from '../pages/Indonesia';
 const NavbarComponent = () => {
     return (
       <Router>
-        <div>
+        <div>     
+          <div class="wrapper">
+            <meta id="meta-description" name="description" content="Some description." />
+        </div>
         <Navbar bg="primary" variant="dark">
           <Container>
           <Navbar.Brand as={Link} to="/">Covid 19</Navbar.Brand>
