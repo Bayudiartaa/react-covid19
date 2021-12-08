@@ -18,7 +18,9 @@ const Indonesia = () => {
 
     function getIndonesia() {
         axios.get("https://api.kawalcorona.com/indonesia",{
-            headers: {'Content-Type': 'application/json'}
+            headers: {'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*' 
+            }   
         })
         .then(function (response) {
         // console.log(response);
@@ -31,7 +33,9 @@ const Indonesia = () => {
 
     function getProvinsi() {
         axios.get("https://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi",{
-            headers: {'Content-Type': 'application/json'}
+            headers: {'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*' 
+            }   
         })
         .then(function (response) {
         // console.log(response);
