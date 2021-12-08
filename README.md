@@ -35,6 +35,12 @@ yarn install
 ```bash
 yarn start
 ```
+## Menggunakan Api
+
+```bash
+https://kawalcorona.com/
+https://github.com/Reynadi531/api-covid19-indonesia-v2
+```
 
 ## Contributing
 
